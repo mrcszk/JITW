@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Ćw2: formatowanie tekstu</title>
+<meta http-equiv="Content-Type" content="application/xhtml+xml;
+charset=UTF-8" />
+<link rel="stylesheet" media="screen" href="konserwatywka.css" type="text/css" />
+<link rel="stylesheet" media="print" href="drukawka.css" type="text/css" />
+<link rel="alternate stylesheet" media="screen" href="alternatywka.css" type="text/css" title="alternatywka" />
+</head>
+<body>
+	<div id="Tytuł">
+		<h1>Ćwiczenie 2</h1>
+	</div>
+	<div id="Ukryte_Menu">
+		<h1>Menu</h1>
+	</div>
+	<div id="Spis_treści">
+	<h3><b>Ćwiczenia:</b></h3>
+		<ul>
+			<li><a href="./cwiczenie1.html">Ćw1: podstawy HTML - Zażółć gęślą jaźń</a></li>
+			<li><a href="./cwiczenie3.html">Ćw3: tabele i listy</a></li>
+			<li><a href="./cwiczenie4.html">Ćw4: obrazy</a></li>
+		</ul>	
+
+		<h3><b>Przejdź do:</b></h3>
+			<ul>
+				<li><a href="#Nagłówek">Formatowanie tekstu</a></li>
+				<li><a href="#Kod">Kod</a></li>
+				<li><a href="#Pyt1">Pytanie 1</a></li>
+				<li><a href="#Pyt2">Pytanie 2</a></li>
+				<li><a href="#Pyt3">Pytanie 3</a></li>
+				<li><a href="#Pyt4">Pytanie 4</a></li>
+			</ul>
+	</div>
+	<div id="Treść">
+		<h1 id="Nagłówek">Formatowanie tekstu</h1>
+		<p>HTML pozwala <i>opisać strukturę informacji zawartych wewnątrz strony internetowej</i>,
+		nadając <em>odpowiednie znaczenie semantyczne</em> poszczególnym fragmentom tekstu – <b>formując hiperłącza</b>,
+		<b>akapity</b>, <strong>nagłówki</strong>, i&nbsp;<strong>listy</strong>. Do szczegółowego opisu formatowania akapitów,
+		nagłówków, użytych czcionek i&nbsp;kolorów, zalecane jest wykorzystywanie kaskadowych arkuszy stylów.<br/>
+		
+		Fragmenty kodu: <code>print("Hello World")</code> i&nbsp;<samp>System.out.printf("Hello World");</samp><br/>
+		
+		a<sub>n</sub> &lt; (x<sup>2</sup> + y<sup>2</sup>), gdzie x &gt; 0 <br/>
+		
+		Linijka, która jest <br/> ręcznie złamana.<br/>
+		
+		<code id="Kod">
+			public class Main {<br/>
+			&emsp;&emsp;public static void main(String[] args) {<br/>
+			&emsp;&emsp;&emsp;System.out.println("Hello World!");<br/>
+			&emsp;&emsp;}<br/>
+			}<br/>
+		</code>
+		</p>
+		<h3 id="Pyt1">Jaka jest różnica między znacznikami <code>i</code> oraz <code>em</code>? Czy zawsze dają identyczne wyniki?</h3>
+			<p>Oba znaczniki powodują pochylenie tekstu - kursywę, przy czym <code>em</code>
+				służy dodatkowo do uwypuklania danej informacji oraz może dawać inny wynik w&nbsp;zależności od stylu. Znacznik <code>em</code> może być nadpisywany w CSS.</p>
+		<h3 id="Pyt2">Jaka jest różnica między znacznikami <code>b</code> oraz <code>strong</code>? Czy zawsze dają identyczne wyniki?</h3>
+			<p>Analogicznie, <code>b</code> wyraża tylko pogrubienie tekstu, natomiast  <code>strong</code>
+			niesie ze sobą dodatkową informację o&nbsp;znaczeniu danej treści oraz może dawać inny wynik w&nbsp;zależności od stylu, można go nadpisać w&nbsp;CSS.</p>
+		<h3 id="Pyt3">Jaka jest różnica między znacznikami <code>code</code> oraz <code>samp</code>? Czy zawsze dają identyczne wyniki?</h3>
+			<p>Te znaczniki nie zawsze dają identyczne wyniki; <code>samp</code> jest używany do wyników 
+			działania programów, a&nbsp;<code>code</code> do kodu źródłego programu. </p>
+		<h3 id="Pyt4">Jaka jest różnica pomiędzy fragmentem strony sformatowanej tak: <code>&lt;p&gt;&hellip;&lt;/p&gt;&lt;p&gt;&hellip;&lt;/p&gt;</code>
+			oraz fragmentem o&nbsp;następującej postaci: <code>&lt;p&gt;&hellip;&lt;br/&gt;&lt;br/&gt;&hellip;&lt;/p&gt;</code>?</h3>
+			<p>Pierwszy fragment to dwa osobne paragrafy, natomiast drugi to jeden paragraf ze złamaną linią.
+				Bez zaglądania w&nbsp;kod źródłowy wyglądają identycznie, może to mieć znaczenie np. przy używaniu CSS.</p>
+		<p id="Walidacja">
+			<a href="http://validator.w3.org/check?uri=referer">
+			<img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" />
+			</a>
+
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+			<img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+			alt="Poprawny CSS!" />
+			</a>
+		</p>
+    
+	</div>
+</body>
+</html>
+
+
+			
+
+		

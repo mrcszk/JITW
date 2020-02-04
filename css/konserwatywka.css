@@ -1,0 +1,190 @@
+body{
+	font-family: 'Helvetica', sans-serif;
+	background: #800000;
+}
+
+h1{
+	color: green;
+	letter-spacing: 10px;
+}
+
+h2{
+	color: blue;
+}
+h3{
+	color: yellow;
+}
+
+p{
+	font-family: 'Arial', sans-serif;
+	text-indent: 15px;
+}
+
+table{
+	background-color: #FFC125;
+	border: 15px solid #CD5700;
+
+}
+
+td{
+	background-color: #964B00;
+	border: 5px solid black;
+}
+
+td:nth-child(1){ 
+	background-color: #CC5D2B	;
+}
+
+td:nth-child(3){
+	background-color: #C04000	;
+	color: white;
+
+}
+
+thead{
+	background-color: black;
+	color: white;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+tfoot{
+	background-color: brown;
+	font-size: 20px;
+}
+
+ol{
+	list-style-type: upper-roman;
+}
+
+ol ol{
+	list-style-type: lower-roman;
+}
+
+ol ol ol{
+	list-style-type: lower-greek;
+}
+
+#Doge{
+	float: left;
+	width: 800px;
+	height: 500px;
+
+}
+
+#Doge2{
+	float: right;
+    width: 800px;
+	height: 500px;
+}
+
+#Spis_treści{
+	position: fixed;
+	width: 250px;
+	height: 70%;
+	float: left;
+	text-align: center;
+	background-color: #FC0300;	
+	padding: 5px;
+	border: 10px solid #000;
+	overflow: auto;
+}
+
+#Spis_treści ul li {
+	background-color: #FA8072;
+	border-color: #B22222	;
+	border-collapse: separate;
+	border-style: solid;
+	list-style-type: none;
+	margin-left: -25px;
+	margin-right: 25px;
+}
+#Spis_treści li a {
+    display: block;
+    color: #000;
+    padding: 2px 10px ;
+    text-decoration: none;
+}
+
+#Spis_treści li a.active {
+    background-color: #F18D9E;
+    color: white;
+    cursor: default;
+}
+
+#Spis_treści li a:hover:not(.active) {
+    background-color: #F18D9E;
+    color: white;
+    cursor: default;
+}
+#Treść{
+	position: relative;
+	max-width: 960px;
+	background-color: #CF2F2F;
+	margin-left: 350px;
+	padding: 5px;
+	border: 10px solid #000;	
+}
+
+#Tytuł{
+	font-size: 30px;
+	background-color: #DC143C;
+	width: 100%;
+	text-align: center;
+	white-space: nowrap;
+}
+
+p:first-letter {
+	color: #801818;
+	font-size: 20px;
+	font-style: italic;
+}
+
+a:hover{
+	color:#FC0300;
+	cursor:default;
+}
+
+#Ukryte_Menu{
+	display: none;
+	background-color: #FC0300;	
+	padding: 5px;
+	border: 10px solid #000;
+	height:auto;
+	overflow:visible;
+	text-align: center;
+	white-space: nowrap;
+}
+#Ukryte_Menu:hover + #Spis_treści, #Spis_treści:hover {
+	clear:both;
+	display:block;
+}
+
+#Ukryte_Menu p{
+	text-align:center;
+	color:white;
+	width:auto;
+	text-align:center;
+}
+@media screen and (max-width: 800px) {
+	#Spis_treści{
+		display: none;
+		left: 50% ;
+		top: 34px;
+		transform: translateX(-50%);
+		float:left;
+		width:230px;
+		height: 200px;
+		z-index:1;
+		position: fixed;
+		padding: 5px;
+		border: 5px solid #000;
+	}
+	#Treść{
+		margin-left: 0px;
+	}
+
+	#Ukryte_Menu{
+		display: block;
+	}
+}
